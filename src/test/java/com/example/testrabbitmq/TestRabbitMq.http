@@ -1,0 +1,8 @@
+### Rabbit mq test
+POST http://localhost:8084/sample/queue
+Content-Type: application/json
+
+{
+  "title" : "mqTest",
+  "content" : "내용11111"
+}

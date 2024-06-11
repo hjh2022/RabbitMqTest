@@ -1,0 +1,28 @@
+server:
+  port: 8084
+#  undertow:
+#    threads:
+#      worker: 50
+#      io: 50
+#  jetty:
+#    threads:
+#      max: 100
+#      min: 10
+#      max-queue-capacity: 30
+#  error:
+#    include-exception: false
+#    include-binding-errors: never
+#    include-message: never
+#    include-stacktrace: never
+#    whitelabel:
+#      enabled: false
+spring:
+  application:
+    name: "ExRabbitMq"
+  profiles:
+    active: local
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
